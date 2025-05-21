@@ -35,8 +35,8 @@ This is a simple 2-page UI built as part of the technical assessment for the Rea
 # 1. Clone the repo:
 
 ```bash
-git clone [Your GitHub Repo URL]
-cd [your-project-folder]
+git clone https://github.com/qtrung811203/dashboard-ui
+cd ui-test
 
 ```
 
