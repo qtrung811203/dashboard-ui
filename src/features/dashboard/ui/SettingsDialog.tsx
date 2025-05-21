@@ -54,8 +54,7 @@ const SettingsDialog = ({ children }: SettingsDialogProps) => {
 
   // Form submission handler
   function onSubmit(data: SettingsFormValues) {
-    console.log("Form submitted:", data);
-    // Here you would typically save the settings
+    alert("Form submitted:" + data);
     setOpen(false);
   }
 
