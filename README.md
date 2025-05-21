@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# React Developer Assessment – Kasradash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple 2-page UI built as part of the technical assessment for the React Developer position at Kasradash. It is built using **React + Vite**, **Shadcn UI**, **Tailwind CSS**, **React Hook Form + Zod**.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **GitHub Repository:** https://github.com/qtrung811203/dashboard-ui
+- **Deployed Project:** https://dashboard-ui-uzrm.onrender.com/
 
-## Expanding the ESLint configuration
+## 📄 Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Dashboard Page
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Displays mock data using the **Card** component from Shadcn UI.
+- Includes a **Dialog (modal)** that opens with a button click.
+- Fully **responsive** for different screen sizes.
+
+### 2. Settings Page
+
+- A form with `Name`, `Email`, and `Password` inputs.
+- Uses **React Hook Form + Zod** for validation.
+- Includes a **Dark Mode toggle** using Tailwind & Shadcn theme system.
+
+## 🛠️ Tech Stack
+
+- React (via Vite)
+- Tailwind CSS
+- Shadcn UI
+- React Hook Form
+- Zod
+- TypeScript
+
+## ⚙️ Getting Started
+
+# 1. Clone the repo:
+
+```bash
+git clone [Your GitHub Repo URL]
+cd [your-project-folder]
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 2. Install Dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+# or
+yarn install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+
+# 3. Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### 💡 Assumptions & Notes
+
+The mock data on the dashboard is static for demo purposes.
+
+Dark mode toggling uses Shadcn's built-in theme management.
+
+No backend or persistence layer is included, as per requirements.
+
+🎥 Optional Video Walkthrough
+https://www.loom.com/share/95206f3746914b99997f8578d36ccc09?sid=c4e9aaca-5db1-4110-89f8-7f554ee11503

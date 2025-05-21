@@ -54,7 +54,7 @@ const SettingsDialog = ({ children }: SettingsDialogProps) => {
 
   // Form submission handler
   function onSubmit(data: SettingsFormValues) {
-    alert("Form submitted:" + data);
+    alert(`Form submitted: ${data.name}, ${data.email}, ${data.password}`);
     setOpen(false);
   }
 
